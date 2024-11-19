@@ -3,7 +3,7 @@
 function countVowels(str) {
     let out = 0;
 	for(let letter of str) {
-        if(/(a|e|i|o|u|y)/.test(letter)) out++;
+        if(/(a|e|i|o|u|y)/.test(letter.toLowerCase())) out++;
     }
     return out;
 }

@@ -2,6 +2,7 @@
 
 function calculateAverage(arr) {
 	let out = 0;
+    if(arr.length == 0) return 0;
     for(let n of arr) out += n;
     out /= arr.length;
     return out;
